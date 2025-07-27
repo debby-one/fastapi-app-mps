@@ -11,4 +11,4 @@ COPY ./app /code/app
 COPY ./wait-for-it.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/wait-for-it.sh
 
-CMD ["wait-for-it.sh", "monthly_portal_db:5432", "--", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["wait-for-it.sh", "aaa:5432", "--", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
